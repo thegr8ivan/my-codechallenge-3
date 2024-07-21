@@ -1,0 +1,81 @@
+body {
+    font-family: Bebas Neue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ADD8E6;
+}
+
+.container {
+    background-color: #20B2AA;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.7);
+    width: 300px;
+    text-align: center;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #64afe9;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: crosshair;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: left;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e70f0f;
+    background-color: #5f15d6;
+}
+
+li.purchased {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #d4edda;
+}
+
+li button.editButton,
+li button.removeButton {
+    border: none;
+    background-color: transparent;
+    color: #007BFF;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+li button.editButton:hover,
+li button.removeButton:hover {
+    color: #002c5a;
+}
+
+.editable {
+    background-color: #0c5db3;
+}
